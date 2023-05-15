@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  jupyterlab:
+    container_name: jupyterlab_of_rajib
+    build: .
+    image: my-jupyterlab-image
+    restart: always
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/jupyterlab_of_rajib
