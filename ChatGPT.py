@@ -1,6 +1,12 @@
+"""
+1. pip install openai
+
+Need to install above packages
+"""
+
 import openai
 
-api_key = "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"  # Replace with your actual API key
+api_key = "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"  # Replace with your actual API key
 openai.api_key = api_key
 
 
