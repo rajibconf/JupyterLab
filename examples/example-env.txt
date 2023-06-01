@@ -1,0 +1,2 @@
+# copy and paste it to project root folder as .env
+OPENAI_API_KEY = "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"
