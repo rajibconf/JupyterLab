@@ -17,7 +17,7 @@ llm = OpenAI(api_token=API_KEY)
 pandas_ai = PandasAI(llm)
 
 
-st.title("Prompt-driven analysis with PandasAI")
+st.title("Prompt-driven analysis")
 uploaded_file = st.file_uploader("Upload a CSV file for analysis", type=['csv'])
 
 if uploaded_file is not None:
