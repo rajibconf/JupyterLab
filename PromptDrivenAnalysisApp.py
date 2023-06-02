@@ -89,12 +89,5 @@ else:
 st.sidebar.markdown("---")
 
 # Add copyright text in the sidebar
-st.sidebar.markdown("© 2023 Your Company. All rights reserved.")
+st.sidebar.markdown("© 2023 Tiger Park Limited. All rights reserved.")
 
-
-hide_streamlit_style = """
-<style>
-    footer {visibility: hidden;}
-</style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)

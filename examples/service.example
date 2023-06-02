@@ -1,0 +1,17 @@
+[Unit]
+Description=Prompt-Chat-instance
+After=network.target
+
+[Service]
+User=centos
+Group=nginx
+WorkingDirectory=/opt/PromptChat
+Environment="PATH=/opt/PromptChat/venv/bin"
+ExecStart=/opt/PromptChat/venv/bin/streamlit run --server.port 8501 /opt/PromptChat/app.py
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
