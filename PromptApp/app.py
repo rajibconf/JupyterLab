@@ -28,7 +28,7 @@ def read_pdf(file):
 def authenticate(username, password):
     # Add your authentication logic here
     # For example, you can check against a database of users or use hardcoded values for demonstration purposes
-    if username == "admin" and password == "password":
+    if username == "admin" and password == "admin321#":
         return True
     else:
         return False
@@ -91,3 +91,12 @@ st.sidebar.markdown("---")
 # Add copyright text in the sidebar
 st.sidebar.markdown("© 2023 Tiger Park Limited. All rights reserved.")
 
+
+hide_streamlit_style = """
+<style>
+    footer {visibility: hidden;}
+    ul.css-1uh038d.e67k41e0 {visibility: hidden;}
+    .st-d4.st-cy.st-du.st-dv.st-dw.st-dx.st-dy.st-dz.st-e0.st-e1.st-c8.st-e2.st-bb.st-ew.st-e4.st-ds.st-bn.st-e5.st-e6.st-db.st-e7 {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
