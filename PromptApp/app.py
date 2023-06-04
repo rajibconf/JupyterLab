@@ -34,6 +34,8 @@ def authenticate(username, password):
         return False
 
 
+st.set_page_config(page_title="Data Analysis Tool", page_icon=":tada:", layout="wide")
+
 st.title("Prompt-driven analysis")
 
 # Check if the user is logged in
